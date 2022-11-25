@@ -15,7 +15,7 @@ public class CheckoutTest extends BasePage{
 	public void navigateToCart() {
 		HomePage homePage = new HomePage(driver);
 		homePage.hoverOverHeadsetsTab();
-		logger.log(LogStatus.INFO, "Hovering over 'Headsets'");
+		logger.log(LogStatus.er 'Headsets'");
 		homePage.clickOculusQuest();
 		logger.log(LogStatus.INFO, "Selecting Oculus Quest link");
 		homePage.addToCart();
@@ -25,10 +25,10 @@ public class CheckoutTest extends BasePage{
 
 	@Test(priority=1)
 	public void verifyRemovingFromCart() {
-		CartPage cartsPage = new CartPage(driver);
+		CartPage carPage(driver);
 		cartsPage.removeItemFromCart();
 		logger.log(LogStatus.INFO, "Removing item from cart");
-		Assert.assertTrue(cartsPage.isItemRemoved());
+		Assert.assertTItemRemoved());
 	}
 
 	@Test(priority=2, dependsOnMethods="verifyRemovingFromCart")
