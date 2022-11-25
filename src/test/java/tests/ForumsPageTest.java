@@ -24,7 +24,7 @@ public class ForumsPageTest extends BasePage{
 	
 	@Test(priority=1, dependsOnMethods="navigateToForumsPage")
 	public void verifyForumsHeaderPresent() {
-		ForumsPage forumsPage = new ForumsPage(driver);		
+		ForumsPage forumsPage = new ForumsPa	
 		logger.log(LogStatus.INFO, "Checking if Forums header is present in the page");
 		Assert.assertTrue(forumsPage.isForumsHeaderPresent());
 	}
